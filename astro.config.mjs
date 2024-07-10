@@ -7,7 +7,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
     server: {
         headers: {
-            "Access-Control-Allow-Origin": "https://api.datasent.com"
+            "Access-Control-Allow-Origin": "*"
         }
     },
     integrations: [
