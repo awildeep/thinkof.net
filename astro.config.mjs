@@ -5,6 +5,11 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
+    server: {
+        headers: {
+            "Access-Control-Allow-Origin": "https://api.datasent.com"
+        }
+    },
     integrations: [
         react(),
         tailwind({
